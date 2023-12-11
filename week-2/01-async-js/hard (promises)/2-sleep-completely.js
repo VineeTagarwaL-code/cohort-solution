@@ -5,4 +5,14 @@
 
 function sleep (seconds) {
 
+    return new Promise(resolve => setTimeout(resolve , seconds))
 }
+
+async function rukja(){
+console.log("started")
+
+await sleep(5000)
+
+console.log("stopped")
+}
+rukja()
